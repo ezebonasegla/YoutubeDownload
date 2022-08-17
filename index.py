@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, Response, redirect, send_file
 import os
 from os import remove
 import pafy
-import moviepy.editor as mp
 
 app = Flask(__name__)
 path=os.getcwd() + '/static/'
