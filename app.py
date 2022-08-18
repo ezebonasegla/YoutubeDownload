@@ -1,7 +1,5 @@
-from concurrent.futures import process
-from flask import Flask, render_template, request, Response, redirect, send_file
+from flask import Flask, render_template, request, send_file
 import os
-from os import remove
 import pafy
 
 app = Flask(__name__)
