@@ -34,7 +34,7 @@ def downloadMP3():
     return send_file(p, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(process.env.PORT)
+    app.run()
 
 
 
