@@ -1,3 +1,4 @@
+from concurrent.futures import process
 from flask import Flask, render_template, request, Response, redirect, send_file
 import os
 from os import remove
@@ -33,7 +34,7 @@ def downloadMP3():
     return send_file(p, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(process.env.PORT)
 
 
 
